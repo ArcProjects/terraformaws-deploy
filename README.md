@@ -5,9 +5,8 @@
 In the peoject i will be using Terraform to create various resource such as Vpc, Subnet, Route table , Security group and EC2 instance.
 
 
-Note  | 
-:---:
- **Click on the blue highlighed text to know more information in each section.** |
+
+ ```**Click on the blue highlighed text to know more information in each section.** | ```
 
 - - -
 
