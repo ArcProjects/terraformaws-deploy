@@ -28,7 +28,7 @@ Note  |
 
 [8. Ami Datasource Configuration](#8-ami-datasource-configuration)
 
-[9. key Pair Creation](#0-key-pair-creation)
+[9. key Pair Creation](#9-key-pair-creation)
 
 [10. Ec2 Instance Creation](#10-ec2-instance-creation)
 
