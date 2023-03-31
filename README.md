@@ -18,7 +18,7 @@ Note  |
 
 [3. Install Terraform](#3-install-terraform)
 
-[4. AWS Provider & Authentication](#4-aws-provider-&-authentication)
+[4. AWS Provider & Authentication](#aws-provider--authentication)
 
 [5. VPC Creation](#5-vpc-creation)
 
