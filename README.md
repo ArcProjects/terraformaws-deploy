@@ -32,7 +32,7 @@ Note  |
 
 [10. Ec2 Instance Creation](#10-ec2-instance-creation)
 
-[11. User Data](#11-user-dat)
+[11. User Data](#11-user-data)
 
 [12. SSH Configuration](#12-ssh-configuration)
 - - - - -
