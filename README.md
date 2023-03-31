@@ -46,6 +46,9 @@ In the peoject i will be using Terraform to create various resource such as Vpc,
 ![terraform](https://github.com/ArcProjects/terraformaws-deploy/blob/docwriter/images/vsterra.png)
 ![aws toolkit](https://github.com/ArcProjects/terraformaws-deploy/blob/docwriter/images/awstoolkit.png)
 ![Remote-SSH Plugins](https://github.com/ArcProjects/terraformaws-deploy/blob/docwriter/images/ssh%20plugins.png)
+
+* Create a terraform directory and initialise terraform using *terraform *init command 
+
 ### 3. Install Terraform
 
 ### 4. AWS Provider & Authentication
