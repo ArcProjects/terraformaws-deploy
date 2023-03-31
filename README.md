@@ -14,35 +14,29 @@ Note  |
 
 [1. IAM Setup](#1-iam-setup)
 
-[2. Environment Setup](#environment-setup)
+[2. Environment Setup](#2-environment-setup)
 
-[3. Install Terraform](#install-terraform)
+[3. Install Terraform](#3-install-terraform)
 
-[4. AWS Provider & Authentication](#aws-provider-&-authentication)
+[4. AWS Provider & Authentication](#4-aws-provider-&-authentication)
 
-[5. VPC Creation](#vpc-creation)
+[5. VPC Creation](#5-vpc-creation)
 
-[6. Subnet Creation]#subnet-creation)
+[6. Subnet Creation](#6-subnet-creation)
 
+[7. Security Group Creation](#77-security-group-creation)
 
+[8. Ami Datasource Configuration](#8-ami-datasource-configuration)
 
+[9. key Pair Creation](#0-key-pair-creation)
 
+[10. Ec2 Instance Creation](#10-ec2-instance-creation)
 
+[11. User Data](#11-user-dat)
 
-
-[7. Security Group Creation](#security-group-creation)
-
-[8. Ami Datasource Configuration](#ami-datasource-configuration)
-
-[9. key Pair Creation](#key-pair-creation)
-
-[10. Ec2 Instance Creation](#ec2-instance-creation)
-
-[11. User Data](#user-dat)
-
-[12. SSH Configuration](#ssh-configuration)
+[12. SSH Configuration](#12-ssh-configuration)
 - - - - -
-- - -
+- - -----
 
 ### 1. IAM Setup
 * Login to Aws Console - https://My_AWS_Account_ID.signin.aws.amazon.com/console/
