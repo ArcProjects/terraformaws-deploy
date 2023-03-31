@@ -114,7 +114,7 @@ resource "aws_vpc" "ntc_vpc" {
 ```
 
 ### 6. Subnet Creation
-``
+```
 #Subnet Creation
 resource "aws_subnet" "ntc_public_subnet" {
   vpc_id                  = aws_vpc.ntc_vpc.id
@@ -126,7 +126,7 @@ resource "aws_subnet" "ntc_public_subnet" {
     Name = "dev-public"
   }
 }
-``
+```
 
 ### 7. Security Group Creation
 
