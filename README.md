@@ -1,6 +1,6 @@
 # Build a Dev Environment with Terraform and AWS
 
-![Architecture](https://github.com/ArcProjects/terraformaws-deploy/blob/docwriter/images/image.png?raw=true)
+![Architecture](https://github.com/ArcProjects/terraformaws-deploy/blob/docwriter/images/architecture.png)
 
 In the peoject i will be using Terraform to create various resource such as Vpc, Subnet, Route table , Security group and EC2 instance.
 - - -
@@ -47,12 +47,16 @@ In the peoject i will be using Terraform to create various resource such as Vpc,
 ![aws toolkit](https://github.com/ArcProjects/terraformaws-deploy/blob/docwriter/images/awstoolkit.png)
 ![Remote-SSH Plugins](https://github.com/ArcProjects/terraformaws-deploy/blob/docwriter/images/ssh%20plugins.png)
 
-* Create a terraform directory and initialise terraform using **terraform init** command 
-![init](https://github.com/ArcProjects/terraformaws-deploy/blob/docwriter/images/init.png)
+
 
 ### 3. Install Terraform
 
-### 4. AWS Provider & Authentication
+* [Download and install Terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
+* Create a terraform directory and initialise terraform using **terraform init** command 
+![init](https://github.com/ArcProjects/terraformaws-deploy/blob/docwriter/images/init.png)
+
+### 4. [AWS Provider & Authentication](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
+
 
 ### 5. VPC Creation
 
