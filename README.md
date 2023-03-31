@@ -252,13 +252,13 @@ sudo usermod -aG docker ubuntu
 
 ```Terraform apply``` will send the request to aws to build or deploy the resource mentioned in the terraform document
 
-![imvalid arg](https://github.com/ArcProjects/terraformaws-deploy/edit/docwriter/images/invalidarg.png)
+![imvalid arg](https://github.com/ArcProjects/terraformaws-deploy/blob/docwriter/images/invalidarg.png)
 
 
 
 ```Terraform destroy``` will destroy the complete resources which was planned and applied
 
-![imvalid arg](https://github.com/ArcProjects/terraformaws-deploy/edit/docwriter/images/destroy.png)
+![destroy](https://github.com/ArcProjects/terraformaws-deploy/blob/docwriter/images/destroy.png)
 
 
 
