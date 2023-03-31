@@ -80,7 +80,7 @@ terraform {
   * Environment variables
   * Shared credentials files
 ```
-#authentication in provider.tf
+#authentication in provider.tf using shared credntial file
 provider "aws" {
   region                  = "us-east-1"
   shared_credentials_file = "~/.aws/credentials"
