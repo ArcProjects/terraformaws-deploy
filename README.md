@@ -1,6 +1,8 @@
 # Build a Dev Environment with Terraform and AWS
 
 ![Architecture](https://github.com/ArcProjects/terraformaws-deploy/blob/docwriter/images/architecute.png)
+```javascript
+         ```
 
 In the peoject i will be using Terraform to create various resource such as Vpc, Subnet, Route table , Security group and EC2 instance.
 
