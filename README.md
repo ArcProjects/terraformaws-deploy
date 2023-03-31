@@ -13,27 +13,34 @@ Note  |
 ## Steps
 
 [1. IAM Setup](#1-iam-setup)
-[2. Environment Setup](# Environment-Setup)
 
-[3. Install Terraform](#Install-Terraform)
+[2. Environment Setup](#environment-setup)
 
-[4. AWS Provider & Authentication](#AWS-Provider-&-Authentication)
+[3. Install Terraform](#install-terraform)
 
-[5. VPC Creation](#VPC-Creation)
+[4. AWS Provider & Authentication](#aws-provider-&-authentication)
 
-[6. Subnet Creation](#Subnet-Creation)
+[5. VPC Creation](#vpc-creation)
 
-[7. Security Group Creation](#Security-Group-Creation)
+[6. Subnet Creation]#subnet-creation)
 
-[8. Ami Datasource Configuration](#Ami-Datasource-Configuration)
 
-[9. key Pair Creation](#key-Pair-Creation)
 
-[10. Ec2 Instance Creation](#Ec2-Instance-Creation)
 
-[11. User Data](#User-Data)
 
-[12. SSH Configuration](#SSH-Configuration)
+
+
+[7. Security Group Creation](#security-group-creation)
+
+[8. Ami Datasource Configuration](#ami-datasource-configuration)
+
+[9. key Pair Creation](#key-pair-creation)
+
+[10. Ec2 Instance Creation](#ec2-instance-creation)
+
+[11. User Data](#user-dat)
+
+[12. SSH Configuration](#ssh-configuration)
 - - - - -
 - - -
 
