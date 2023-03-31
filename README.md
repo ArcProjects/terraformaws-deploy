@@ -6,7 +6,7 @@ In the peoject i will be using Terraform to create various resource such as Vpc,
 
 ##Steps
 
-[1. IAM Setup](# IAM-Setup)
+[1. IAM Setup](#IAM-Setup)
 [2. Environment Setup]
 [3. Install Terraform]
 [4. AWS Provider & Authentication]
