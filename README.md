@@ -126,15 +126,142 @@ resource "aws_subnet" "ntc_public_subnet" {
     Name = "dev-public"
   }
 }
+#Internet GW IGW Creation
+resource "aws_internet_gateway" "ntc_internet_gateway" {
+  vpc_id = aws_vpc.ntc_vpc.id
+
+  tags = {
+    Name = "ntc_igw"
+  }
+}
+
+#Route Table Creation
+resource "aws_route_table" "ntc_public_rt" {
+  vpc_id = aws_vpc.ntc_vpc.id
+
+  tags = {
+    Name = "dev_public_rt"
+  }
+}
+
+#Route Inside a Route Table
+resource "aws_route" "default_route" {
+  route_table_id         = aws_route_table.ntc_public_rt.id
+  destination_cidr_block = "0.0.0.0/0"
+  gateway_id             = aws_internet_gateway.ntc_internet_gateway.id
+}
+
+#Route Table Assosisation with Subnet
+resource "aws_route_table_association" "ntc_public_assoc" {
+  subnet_id      = aws_subnet.ntc_public_subnet.id
+  route_table_id = aws_route_table.ntc_public_rt.id
+}
 ```
 
 ### 7. Security Group Creation
 
+```
+#Security Group
+resource "aws_security_group" "ntc_sg" {
+  name        = "public_sg"
+  description = "public security group"
+  vpc_id      = aws_vpc.ntc_vpc.id
+  ingress {
+    from_port   = 22
+    to_port     = 22
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  egress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+}
+```
+
 ### 8. Ami Datasource Configuration
+Create a new file called datasource.tf and create ami data which will be refernced while crearting new EC2
+```
+data "aws_ami" "server_ami" {
+  most_recent = true
+  owners      = ["099720109477"]
+
+  filter {
+    name   = "name"
+    values = ["ubuntu/images/hvm-ssd/ubuntu-bionic-18.04-amd64-server-*"]
+  }
+}
+```
 
 ### 9. key Pair Creation
 
-### 10. Ec2 Instance Creation
-### 11. User Data 
+```
+#Key Pair Generation
+resource "aws_key_pair" "ntc_auth" {
+  key_name   = "ntckey"
+  public_key = file("~/.ssh/ntckey.pub")
+}
+```
 
-### 12. SSH Configuration
+### 10. Ec2 Instance Creation
+
+```
+# Instance Creation
+resource "aws_instance" "dev_node" {
+    instance_type = "t2.micro"
+    /*ami   = "var.ami"*/  # Deploy with variable
+    ami = data.aws_ami.server_ami.id
+    key_name = aws_key_pair.ntc_auth.id 
+    vpc_security_group_ids = [aws_security_group.ntc_sg.id]
+    subnet_id = aws_subnet.ntc_public_subnet.id
+    user_data = file("userdata.tpl")
+
+    root_block_device {
+        volume_size = 10
+    }
+    
+    tags = {
+        Name = "dev-node"
+    }
+
+```
+
+### 11. User Data 
+create userdata.tpl file . This file will be used to install softwares needed after the first boot
+
+```
+#!/bin/bash
+sudo apt-get update -y &&
+sudo apt-get install -y \
+apt-transport-https \
+ca-certificates \
+curl \
+gnupg-agent \
+software-properties-common &&
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - &&
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" &&
+sudo apt-get update -y &&
+sudo sudo apt-get install docker-ce docker-ce-cli containerd.io -y &&
+sudo usermod -aG docker ubuntu
+```
+
+### 12. plan and validation 
+```Terraform plan``` will vaildate the code you have written, if there is any error while defining any resources will be highlighted.
+
+```Terraform apply``` will send the request to aws to build or deploy the resource mentioned in the terraform document
+
+![imvalid arg](https://github.com/ArcProjects/terraformaws-deploy/edit/docwriter/invalidarg.png)
+
+
+
+```Terraform destroy``` will destroy the complete resources which was planned and applied
+
+![imvalid arg](https://github.com/ArcProjects/terraformaws-deploy/edit/docwriter/destroy.png)
+
+
+
+### 13. ssh configuration and console access 
+
