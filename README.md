@@ -65,6 +65,7 @@ In the peoject i will be using Terraform to create various resource such as Vpc,
   * Shared configuration files
   * Container credentials
   * Instance profile credentials and region
+
 You can configure the credentials directly by going in to .aws folder and edit Shared configuration files put your acess keys , secrets and profile name or use vscode to create the credential profile
 
 
