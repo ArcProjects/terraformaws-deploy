@@ -2,9 +2,9 @@
 
 ![Architecture](https://github.com/ArcProjects/terraformaws-deploy/blob/docwriter/images/architecute.png)
 
-````
 In the peoject i will be using Terraform to create various resource such as Vpc, Subnet, Route table , Security group and EC2 instance.
-````
+
+
 Note  | 
 :---:
  **Click on the blue highlighed text to know more information in each section.** |
@@ -64,6 +64,17 @@ Note  |
 ### 4. AWS Provider & Authentication
 
 * [Create a file provider.tf  and add the provider](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
+
+```
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 3.0"
+    }
+  }
+}
+```
 * For authentication we can use many methods -more information follow the [link](https://registry.terraform.io/providers/hashicorp/aws/latest/docs). In this project i will be using the shared credential file. 
   * Parameters in the provider configuration
   * Environment variables
