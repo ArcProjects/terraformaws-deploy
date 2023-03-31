@@ -18,13 +18,13 @@ Note  |
 
 [3. Install Terraform](#3-install-terraform)
 
-[4. AWS Provider & Authentication](#aws-provider--authentication)
+[4. AWS Provider & Authentication](#4-aws-provider--authentication)
 
 [5. VPC Creation](#5-vpc-creation)
 
 [6. Subnet Creation](#6-subnet-creation)
 
-[7. Security Group Creation](#77-security-group-creation)
+[7. Security Group Creation](#7-security-group-creation)
 
 [8. Ami Datasource Configuration](#8-ami-datasource-configuration)
 
