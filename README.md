@@ -3,14 +3,9 @@
 ![Architecture](https://github.com/ArcProjects/terraformaws-deploy/blob/docwriter/images/image.png?raw=true)
 
 In the peoject i will be using Terraform to create various resource such as Vpc, Subnet, Route table , Security group and EC2 instance.
+- - -
 
 ## Steps
-
-
-
-
-
-
 
 [1. IAM Setup](#IAM-Setup)
 
@@ -35,7 +30,8 @@ In the peoject i will be using Terraform to create various resource such as Vpc,
 [11. User Data](#User-Data)
 
 [12. SSH Configuration](#SSH-Configuration)
-
+- - - - -
+- - -
 
 ### 1. IAM Setup
 
