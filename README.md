@@ -252,6 +252,8 @@ sudo usermod -aG docker ubuntu
 
 ```Terraform apply``` will send the request to aws to build or deploy the resource mentioned in the terraform document
 
+``` [Terraform state list](https://developer.hashicorp.com/terraform/cli/commands/state/list)``` The command will list all resources in the state file matching the given addresses (if any). If no addresses are given, all resources are listed.
+
 ![imvalid arg](https://github.com/ArcProjects/terraformaws-deploy/blob/docwriter/images/invalidarg.png)
 
 
