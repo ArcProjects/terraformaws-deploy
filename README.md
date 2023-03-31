@@ -98,10 +98,20 @@ You can configure the credentials directly by going in to .aws folder and edit S
 ![vs code cred manager](https://github.com/ArcProjects/terraformaws-deploy/blob/docwriter/images/createcred.png)
 
 
-  
-
-
 ### 5. VPC Creation
+```
+#VPC Creation in main.tf file
+resource "aws_vpc" "ntc_vpc" {
+  cidr_block           = "10.123.0.0/16"
+  enable_dns_hostnames = true
+  enable_dns_support   = true
+
+  tags = {
+    Name = "dev"
+  }
+
+}
+```
 
 ### 6. Subnet Creation
 
