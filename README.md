@@ -12,8 +12,7 @@ Note  |
 
 ## Steps
 
-[1. IAM Setup](###IAM-Setup)
-
+[1. IAM Setup](#1-iam-setup)
 [2. Environment Setup](# Environment-Setup)
 
 [3. Install Terraform](#Install-Terraform)
