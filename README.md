@@ -1,6 +1,6 @@
 # Build a Dev Environment with Terraform and AWS
 
-![Architecture](https://github.com/ArcProjects/terraformaws-deploy/blob/docwriter/images/architecture.png)
+![Architecture](https://github.com/ArcProjects/terraformaws-deploy/blob/docwriter/images/architecute.png)
 
 In the peoject i will be using Terraform to create various resource such as Vpc, Subnet, Route table , Security group and EC2 instance.
 - - -
@@ -67,6 +67,10 @@ In the peoject i will be using Terraform to create various resource such as Vpc,
   * Instance profile credentials and region
 
 You can configure the credentials directly by going in to .aws folder and edit Shared configuration files put your acess keys , secrets and profile name or use vscode to create the credential profile
+
+![aws folder](https://github.com/ArcProjects/terraformaws-deploy/blob/docwriter/images/awsfolder.png)
+
+![vs code cred manager](https://github.com/ArcProjects/terraformaws-deploy/blob/docwriter/images/createcred.png)
 
 
   
