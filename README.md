@@ -55,7 +55,20 @@ In the peoject i will be using Terraform to create various resource such as Vpc,
 * Create a terraform directory and initialise terraform using **terraform init** command 
 ![init](https://github.com/ArcProjects/terraformaws-deploy/blob/docwriter/images/init.png)
 
-### 4. [AWS Provider & Authentication](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
+### 4. AWS Provider & Authentication
+
+* [Create a file provider.tf  and add the provider](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
+* For authentication we can use many methods -more information follow the [link](https://registry.terraform.io/providers/hashicorp/aws/latest/docs). In this project i will be using the shared credential file. 
+  * Parameters in the provider configuration
+  * Environment variables
+  * Shared credentials files
+  * Shared configuration files
+  * Container credentials
+  * Instance profile credentials and region
+You can configure the credentials directly by going in to .aws folder and edit Shared configuration files put your acess keys , secrets and profile name or use vscode to create the credential profile
+
+
+  
 
 
 ### 5. VPC Creation
