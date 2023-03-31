@@ -34,6 +34,9 @@ In the peoject i will be using Terraform to create various resource such as Vpc,
 - - -
 
 ### 1. IAM Setup
+* Login to Aws Console
+* [create a user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) with admin privilages
+* [Create new access keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) and download .csv file
 
 ### 2. Environment Setup
 
