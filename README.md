@@ -40,11 +40,12 @@ In the peoject i will be using Terraform to create various resource such as Vpc,
 
 ### 2. Environment Setup
 
-* [nstall vscode](https://My_AWS_Account_ID.signin.aws.amazon.com/console/)
+* [Install vscode](https://My_AWS_Account_ID.signin.aws.amazon.com/console/)
 * Install Terraform, Aws Toolkit , Remote SSH Plugins.
+
 ![terraform](https://github.com/ArcProjects/terraformaws-deploy/blob/docwriter/images/vsterra.png)
 ![aws toolkit](https://github.com/ArcProjects/terraformaws-deploy/blob/docwriter/images/awstoolkit.png)
-![Remote-SSH Plugins](https://github.com/ArcProjects/terraformaws-deploy/blob/docwriter/images/ssh plugins.png)
+![Remote-SSH Plugins](https://github.com/ArcProjects/terraformaws-deploy/blob/docwriter/images/ssh%20plugins.png)
 ### 3. Install Terraform
 
 ### 4. AWS Provider & Authentication
