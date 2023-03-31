@@ -248,17 +248,17 @@ sudo usermod -aG docker ubuntu
 ```
 
 ### 12. plan and validation 
-```Terraform plan``` will vaildate the code you have written, if there is any error while defining any resources will be highlighted.
+[Terraform plan](https://developer.hashicorp.com/terraform/cli/commands/apply)  creates an execution plan, which lets you preview the changes that Terraform plans to make to your infrastructure.Vaildates the code you have written, if there is any error while defining any resources will be highlighted.
 
-```Terraform apply``` will send the request to aws to build or deploy the resource mentioned in the terraform document
+[Terraform apply](https://developer.hashicorp.com/terraform/cli/commands/apply) The terraform apply command executes the actions proposed in a Terraform plan. Will send the request to aws to build or deploy the resource mentioned in the terraform plan.
 
-``` [Terraform state list](https://developer.hashicorp.com/terraform/cli/commands/state/list)``` The command will list all resources in the state file matching the given addresses (if any). If no addresses are given, all resources are listed.
+[Terraform state list](https://developer.hashicorp.com/terraform/cli/commands/state/list) The command will list all resources in the state file matching the given addresses (if any). If no addresses are given, all resources are listed.
 
 ![imvalid arg](https://github.com/ArcProjects/terraformaws-deploy/blob/docwriter/images/invalidarg.png)
 
 
 
-```Terraform destroy``` will destroy the complete resources which was planned and applied
+[Terraform destroy](https://developer.hashicorp.com/terraform/cli/commands/destroy) will destroy the complete resources which was planned and applied.
 
 ![destroy](https://github.com/ArcProjects/terraformaws-deploy/blob/docwriter/images/destroy.png)
 
