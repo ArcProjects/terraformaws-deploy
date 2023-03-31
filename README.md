@@ -79,6 +79,14 @@ terraform {
   * Parameters in the provider configuration
   * Environment variables
   * Shared credentials files
+```
+#authentication in provider.tf
+provider "aws" {
+  region                  = "us-east-1"
+  shared_credentials_file = "~/.aws/credentials"
+  profile                 = "sim"
+} 
+```
   * Shared configuration files
   * Container credentials
   * Instance profile credentials and region
