@@ -1,5 +1,6 @@
 # Build a Dev Environment with Terraform and AWS
 
+
 ![Architecture](https://github.com/ArcProjects/terraformaws-deploy/blob/docwriter/images/architecute.png)
 
 In the peoject i will be using Terraform to create various resource such as Vpc, Subnet, Route table , Security group and EC2 instance.
@@ -265,4 +266,8 @@ sudo usermod -aG docker ubuntu
 
 
 ### 13. ssh configuration and console access 
+
+=======
+Deploy AWS instance using Terraform and VS code and take remote ssh using vs code and access the files.
+
 
