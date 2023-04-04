@@ -1,5 +1,6 @@
 # Build a Dev Environment with Terraform and AWS
 
+<<<<<<< HEAD
 
 ![Architecture](https://github.com/ArcProjects/terraformaws-deploy/blob/main/images/architecute.png)
 
@@ -271,3 +272,6 @@ sudo usermod -aG docker ubuntu
 Deploy AWS instance using Terraform and VS code and take remote ssh using vs code and access the files.
 
 
+=======
+Deploy AWS instance using Terraform and VS code and take remote ssh using vs code and access the files.
+>>>>>>> 936ef7a (final commit from project)

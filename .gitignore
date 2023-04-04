@@ -1,0 +1,14 @@
+# misc
+*.pem
+
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+**/*.tfstate
+**/*.tfstate.*
+
+# Non Required Folders
+*.txt
+instances
+otherdocs
