@@ -1,7 +1,7 @@
 # Build a Dev Environment with Terraform and AWS
 
 
-![Architecture](https://github.com/ArcProjects/terraformaws-deploy/blob/docwriter/images/architecute.png)
+![Architecture](https://github.com/ArcProjects/terraformaws-deploy/blob/main/images/architecute.png)
 
 In the peoject i will be using Terraform to create various resource such as Vpc, Subnet, Route table , Security group and EC2 instance.
 
@@ -49,9 +49,9 @@ In the peoject i will be using Terraform to create various resource such as Vpc,
 * [Install vscode](https://My_AWS_Account_ID.signin.aws.amazon.com/console/)
 * Install Terraform, Aws Toolkit , Remote SSH Plugins.
 
-![terraform](https://github.com/ArcProjects/terraformaws-deploy/blob/docwriter/images/vsterra.png)
-![aws toolkit](https://github.com/ArcProjects/terraformaws-deploy/blob/docwriter/images/awstoolkit.png)
-![Remote-SSH Plugins](https://github.com/ArcProjects/terraformaws-deploy/blob/docwriter/images/ssh%20plugins.png)
+![terraform](https://github.com/ArcProjects/terraformaws-deploy/blob/main/images/vsterra.png)
+![aws toolkit](https://github.com/ArcProjects/terraformaws-deploy/blob/main/images/awstoolkit.png)
+![Remote-SSH Plugins](https://github.com/ArcProjects/terraformaws-deploy/blob/main/images/ssh%20plugins.png)
 
 
 
@@ -59,7 +59,7 @@ In the peoject i will be using Terraform to create various resource such as Vpc,
 
 * [Download and install Terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
 * Create a terraform directory and initialise terraform using **terraform init** command 
-![init](https://github.com/ArcProjects/terraformaws-deploy/blob/docwriter/images/init.png)
+![init](https://github.com/ArcProjects/terraformaws-deploy/blob/main/images/init.png)
 
 ### 4. AWS Provider & Authentication
 
@@ -93,9 +93,9 @@ provider "aws" {
 
 You can configure the credentials directly by going in to .aws folder and edit Shared configuration files put your acess keys , secrets and profile name or use vscode to create the credential profile
 
-![aws folder](https://github.com/ArcProjects/terraformaws-deploy/blob/docwriter/images/awsfolder.png)
+![aws folder](https://github.com/ArcProjects/terraformaws-deploy/blob/main/images/awsfolder.png)
 
-![vs code cred manager](https://github.com/ArcProjects/terraformaws-deploy/blob/docwriter/images/createcred.png)
+![vs code cred manager](https://github.com/ArcProjects/terraformaws-deploy/blob/main/images/createcred.png)
 
 
 ### 5. VPC Creation
@@ -255,13 +255,13 @@ sudo usermod -aG docker ubuntu
 
 [Terraform state list](https://developer.hashicorp.com/terraform/cli/commands/state/list) The command will list all resources in the state file matching the given addresses (if any). If no addresses are given, all resources are listed.
 
-![imvalid arg](https://github.com/ArcProjects/terraformaws-deploy/blob/docwriter/images/invalidarg.png)
+![imvalid arg](https://github.com/ArcProjects/terraformaws-deploy/blob/main/images/invalidarg.png)
 
 
 
 [Terraform destroy](https://developer.hashicorp.com/terraform/cli/commands/destroy) will destroy the complete resources which was planned and applied.
 
-![destroy](https://github.com/ArcProjects/terraformaws-deploy/blob/docwriter/images/destroy.png)
+![destroy](https://github.com/ArcProjects/terraformaws-deploy/blob/main/images/destroy.png)
 
 
 
